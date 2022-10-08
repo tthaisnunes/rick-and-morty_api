@@ -1,0 +1,13 @@
+<div class="columns-4">
+  <div *ngFor="let item of list?.results">
+    <img [src]="item.image" alt="" />
+    <p class="text-white">{{ item.name }}</p>
+    <p class="text-white">{{ item.status }}</p>
+    <p class="text-white">{{ item.species }}</p>
+    <p class="text-white">{{ item.type }}</p>
+    <p class="text-white">{{ item.gender }}</p>
+    <p class="text-white">{{ item.origin.name }}</p>
+    <p class="text-white">{{ item.location.name }}</p>
+    <p class="text-white">{{ item.created | date }}</p>
+  </div>
+</div>
